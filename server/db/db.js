@@ -4,4 +4,4 @@ function getPlaylist(db = connection) {
   return db('playlist').select()
 }
 
-module.exports = getPlaylist
+module.exports = { getPlaylist }
