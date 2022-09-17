@@ -7,6 +7,9 @@ function playlistReducer(state = initialState, action) {
   switch (type) {
     case SET_PLAYLIST:
       return payload
+
+    default:
+      return state
   }
 }
 

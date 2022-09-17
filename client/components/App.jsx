@@ -1,11 +1,14 @@
 import React from 'react'
 
+import Playlist from './Playlist'
+
 function App() {
   return (
     <>
       <header className="header">
-        <h1>My Playlist</h1>
+        <h1>Playlist</h1>
       </header>
+      <Playlist />
       <section className="main">{/* add your code here */}</section>
     </>
   )
