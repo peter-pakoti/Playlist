@@ -7,3 +7,11 @@ export function getPlaylist() {
     return result.body
   })
 }
+
+export function addPlaylist(playlist) {
+  return request
+    .post(serverUrl + '/playlist')
+    .send({ playlist })
+    .then((res) => res.body.playlist)
+    .catch((err) => console.error(err))
+}
