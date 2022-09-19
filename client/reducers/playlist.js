@@ -1,4 +1,4 @@
-import { SET_PLAYLIST } from '../actions'
+import { SET_PLAYLIST, ADD_PLAYLIST } from '../actions'
 
 const initialState = []
 
@@ -13,4 +13,18 @@ function playlistReducer(state = initialState, action) {
   }
 }
 
-export default playlistReducer
+function addPlaylistReducer(state = initialState, action) {
+  const { type, payload } = action
+  switch (type) {
+    case ADD_PLAYLIST:
+      return payload
+
+    default:
+      return state
+  }
+}
+
+export default {
+  playlistReducer,
+  addPlaylistReducer,
+}
