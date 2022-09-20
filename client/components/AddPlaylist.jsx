@@ -55,9 +55,9 @@ function AddPlaylist() {
           />
         </label>
         <br></br>
-        <label>
-          <input type="submit" value="Add song" />
-        </label>
+        <button>
+          ADD SONG {/* <input type="submit" value="Add song" /> */}
+        </button>
       </form>
     </>
   )

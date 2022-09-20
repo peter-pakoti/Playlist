@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange: #FD841F;
+  --DarkOrange: #E14D2A;
+  --Yellow:#FCC21B;
+  --Blue: #5FC6CB;
+  --Purple: #3D0F71;
+  --Text: #FFE9A0;
+  }
+
+body {
+  background-color: var(--orange);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 3rem 2rem 3rem;
+  width: 75%;
+}
+
+input {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+section {
+  padding: 15px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color:var(--DarkOrange);
+  color: var(--Yellow);
+  min-width:25%;
+  border: none;
+  padding: 15px;
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover {
+  background-color: var(--Purple);
+  color: var(--Yellow);
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+.center {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: var(--Text);
+  font-size: 3.5rem;
+  text-align: center;
+  background-color: var(--DarkOrange);
+  padding: 25px;
+}
+
+.myPlaylistHeader {
+  color: var(--Text);
+  font-size: 1.5rem;
+  text-align: center; 
+}
+
+.MySongs {
+  color: #562B08;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+

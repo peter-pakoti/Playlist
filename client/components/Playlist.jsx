@@ -19,7 +19,7 @@ function Playlist() {
       <div className="MySongs">
         {songList?.map((song) => (
           <section key={song.id}>
-            <h1> Song Title: {song.songTitle}</h1>
+            <h2> Song Title: {song.songTitle}</h2>
             <h3> Artist: {song.artist}</h3>
             <h3> Review: {song.review}</h3>
           </section>
