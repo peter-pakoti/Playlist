@@ -4,7 +4,6 @@ import { fetchPlaylist } from '../actions/index'
 
 function Playlist() {
   const songList = useSelector((state) => state.playlist)
-  console.log(songList)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -13,15 +12,19 @@ function Playlist() {
 
   return (
     <>
-      <h1> My Playlist </h1>
+      <header className="myPlaylistHeader">
+        <h1> My Playlist </h1>
+      </header>
 
-      {songList.map((song) => (
-        <section key={song.id}>
-          <h1>{song.songTitle}</h1>
-          <h1>{song.artist}</h1>
-          <h3>{song.review}</h3>
-        </section>
-      ))}
+      <div className="MySongs">
+        {songList?.map((song) => (
+          <section key={song.id}>
+            <h1> Song Title: {song.songTitle}</h1>
+            <h3> Artist: {song.artist}</h3>
+            <h3> Review: {song.review}</h3>
+          </section>
+        ))}
+      </div>
     </>
   )
 }

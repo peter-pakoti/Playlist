@@ -5,12 +5,10 @@ function getPlaylist(db = connection) {
 }
 
 function addPlaylist(newPlaylist, db = connection) {
-  return db('playlist').insert(newPlaylist)
+  return db('playlist')
+    .insert(newPlaylist)
+    .then(() => getPlaylist(db))
 }
-
-// function addFruit(fruit, db = connection) {
-//   return db('fruits').insert(fruit)
-// }
 
 module.exports = {
   getPlaylist,

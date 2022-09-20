@@ -11,7 +11,7 @@ export function getPlaylist() {
 export function addPlaylist(playlist) {
   return request
     .post(serverUrl + '/playlist')
-    .send({ playlist })
-    .then((res) => res.body.playlist)
+    .send(playlist)
+    .then((res) => res.body)
     .catch((err) => console.error(err))
 }

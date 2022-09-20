@@ -20,11 +20,11 @@ export function createPlaylist(playlist) {
   return { type: ADD_PLAYLIST, payload: playlist }
 }
 
-export function makePlaylist() {
+export function makePlaylist(playlist) {
   return (dispatch) => {
-    return addPlaylist().then((playlist) => {
-      dispatch(createPlaylist(playlist))
-      return null
+    return addPlaylist(playlist).then((playlist) => {
+      dispatch(setPlaylist(playlist))
+      // return null
     })
   }
 }
