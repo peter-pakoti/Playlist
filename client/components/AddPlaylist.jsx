@@ -35,7 +35,7 @@ function AddPlaylist() {
             name="songTitle"
             value={form.songTitle}
             onChange={handleChange}
-            placeholder="Add song title"
+            placeholder="Song name"
           />
           <input
             type="text"
@@ -43,7 +43,7 @@ function AddPlaylist() {
             name="artist"
             value={form.artist}
             onChange={handleChange}
-            placeholder="Add song Artist"
+            placeholder="Artist"
           />
           <input
             type="text"
@@ -51,7 +51,7 @@ function AddPlaylist() {
             name="review"
             value={form.review}
             onChange={handleChange}
-            placeholder="Add song review"
+            placeholder="Review"
           />
         </label>
         <br></br>
